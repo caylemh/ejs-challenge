@@ -5,11 +5,11 @@
 <p><%= viewHomeContent %></p>
 <hr>
 
-<% for(let i=0; i < viewPosts.length; i++) { %>
+<% viewPosts.forEach(function(post) { %>
   <div class="container post">
-    <h2><%= viewPosts[i].postTitle %></h2>
-    <p><%= viewPosts[i].postContent %></p>
+    <h2><%= post.postTitle %></h2>
+    <p><%= post.postContent %></p>
   </div>
-<% } %>
+<% }); %>
 
 <%- include("partials/footer") %>
