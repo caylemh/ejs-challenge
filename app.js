@@ -20,7 +20,8 @@ app.use(express.static("public"));
 //get home route
 app.get("/", function(req,res){
   res.render("home", {
-    viewHomeContent: homeStartingContent
+    viewHomeContent: homeStartingContent,
+    viewPosts: posts
   });
 
   console.log(posts);

@@ -3,5 +3,13 @@
 <h1>Home</h1>
 
 <p><%= viewHomeContent %></p>
+<hr>
+
+<% for(let i=0; i < viewPosts.length; i++) { %>
+  <div class="container post">
+    <h2><%= viewPosts[i].postTitle %></h2>
+    <p><%= viewPosts[i].postContent %></p>
+  </div>
+<% } %>
 
 <%- include("partials/footer") %>
