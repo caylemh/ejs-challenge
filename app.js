@@ -43,9 +43,9 @@ app.get("/compose", function(req,res){
 
 // Post compose route
 app.post("/compose", function(req,res){
-  let post = req.body.viewComposePost;
+
+  console.log(req.body.viewPostTitle);
   
-  console.log(post);
 });
 
 

@@ -3,8 +3,15 @@
 <h1>Compose</h1>
 
 <form class="" action="/compose" method="post">
-  <input type="text" name="viewComposePost" placeholder="Add a new post..." autocomplete="off">
-  <button type="submit" name="button" value="">Publish</button>
+  <div class="form-group">
+    <label class="form-label" for="viewPostTitle">Title</label>
+    <input class="form-control mb-3" type="text" name="viewPostTitle" placeholder="Add a post Title..." autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="viewPost">Post</label>
+    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="5" placeholder="Add content for your post..."></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit" name="button" value="">Publish</button>
 </form>
 
 <%- include("partials/footer") %>
