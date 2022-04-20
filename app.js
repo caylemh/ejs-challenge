@@ -61,7 +61,16 @@ app.post("/compose", function(req,res){
 
 //Adding route for each post
 app.get("/posts/:postName", function(req, res){
-  console.log(req.params.postName);
+  const requestedTitle = req.params.postName;
+
+  posts.forEach(function(post){
+    const storedTitle = post.postTitle;
+
+    if(storedTitle === requestedTitle){
+      console.log("Match Found!");
+    }
+  });
+
 });
 
 
