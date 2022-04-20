@@ -22,6 +22,20 @@ app.get("/", function(req,res){
   });
 });
 
+// Get about route
+app.get("/about", function(req,res){
+  res.render("about", {
+    viewAboutContent: aboutContent
+  });
+});
+
+// Get contacts route
+app.get("/contact", function(req,res){
+  res.render("contact", {
+    viewContactContent: contactContent
+  });
+});
+
 
 
 
