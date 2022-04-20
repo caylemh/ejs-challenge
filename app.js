@@ -23,8 +23,6 @@ app.get("/", function(req,res){
     viewHomeContent: homeStartingContent,
     viewPosts: posts
   });
-
-  console.log(posts);
 });
 
 // Get about route

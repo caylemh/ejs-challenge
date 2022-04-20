@@ -1,3 +1,9 @@
+.navbar-header p{
+  font-family: 'Dancing Script', cursive;
+  font-size: 4em;
+  letter-spacing: -1px;
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -10,7 +16,13 @@
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    background-color: hsl(0, 0%, 85%);
 }
+
+.navbar-nav li a{
+  transition: all 0.3s ease-in-out;
+}
+
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 }
@@ -20,12 +32,12 @@
 }
 
 .footer {
-	/* position: absolute; */
+	position: absolute;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
 	height: 60px;
-	background-color: #1abc9c;
+	background-color: hsl(34, 87%, 59%);
 }
 
 .footer p {
@@ -37,6 +49,13 @@
 .post{
   max-width: 90%;
   border-radius: 5px;
-  box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.2);
   margin-bottom: 2em;
+  background-color: hsl(0, 0%, 95%);
+  transition: all 0.3s ease-in-out;
+}
+
+.post:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 75%);
 }
