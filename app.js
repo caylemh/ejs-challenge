@@ -68,14 +68,13 @@ app.get("/posts/:postName", function(req, res){
     const storedTitle = _.lowerCase(post.postTitle);
 
     if(storedTitle === requestedTitle){
-      console.log("Match Found!" + `storedTitle = ${storedTitle} & requestedTitle = ${requestedTitle}`);
-    } else {
-      console.log("No Match Found!" + `storedTitle = ${storedTitle} & requestedTitle = ${requestedTitle}`);
+      res.render("post", {
+        viewTitle: _.upperFirst(post.postTitle),
+        viewContent: post.postContent
+      });
     }
   });
-  console.log("\n");
 });
-
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
