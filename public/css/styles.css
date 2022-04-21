@@ -61,3 +61,11 @@
   cursor: pointer;
   background-color: hsl(0, 0%, 75%);
 }
+
+/*Truncating characters to a set amount*/
+.post p {
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
